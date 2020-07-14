@@ -1,0 +1,35 @@
+{
+  "name": "generator-caterpillar",
+  "version": "0.0.1",
+  "description": "Simple yeoman generator template. Based on https://github.com/marcol/generator-uncomplicated",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "lint": "npm run lint:js && npm run lint:md && npm run lint:css",
+    "lint:css": "stylelint **/*.html **/*.css; exit 0",
+    "lint:js": "eslint .; exit 0",
+    "lint:md": "remark .; exit 0 ",
+    "test": "mocha 'test/index.js'",
+    "updade": "ncu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DenTivor/caterpillar-generator.git"
+  },
+  "license": "ISC",
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^4.11.0"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "del": "^5.1.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "path": "^0.12.7",
+    "yo": "^3.1.1"
+  }
+}

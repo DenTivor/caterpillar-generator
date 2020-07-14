@@ -1,2 +1,2 @@
 # caterpillar-generator
-Generate yaml model to swagger OAS 3
+Simple Yeoman generator template
